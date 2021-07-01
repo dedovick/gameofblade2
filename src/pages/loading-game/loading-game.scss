@@ -1,0 +1,50 @@
+.backgroundImage{
+    background-image: url('../../assets/ui/pageBg.png');
+}
+
+.background-transparent{
+    opacity: 0.1;   
+    height: 100px;
+}
+
+.font-tittle{
+    color: black;    
+    font-size: 25px;
+    padding-top: 20px;  
+}
+
+.font-subtittle{
+    color: black;
+    font-size: 18px;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+.next{
+    left: 0;
+    bottom: 10px;
+    right: 0;
+    height: 50px;
+}
+.selected{
+    opacity: 1;   
+}
+
+.doted{
+    padding-top: 10px;
+    height: 500px;
+}
+
+.doted ion-img{
+    display: block !important;
+    margin: auto;
+}
+
+.loading-row{
+    height: 100px;
+}
+
+
+
+
+

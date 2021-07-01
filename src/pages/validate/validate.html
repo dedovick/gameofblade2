@@ -1,0 +1,53 @@
+<ion-content padding class="backgroundImage">
+    <ion-grid>
+      <ion-row>   
+        <ion-label class="turn-label bangers" col-3>ROUND {{turn}}</ion-label>        
+      </ion-row>   
+      <ion-row class="turn-information">          
+          <ion-col class="turn-information-name">
+            <ion-row>
+              <ion-label center class="turn-trick bangers" >{{trick}}</ion-label>
+            </ion-row>            
+          </ion-col>       
+      </ion-row>
+      <ion-row  no-margin *ngFor="let player of players">        
+        <ion-row class="turn-trick-capsule"> 
+          <ion-col col-3 class="doted">
+            <ion-img width="70px" height="180px" src='{{player.icon}}'></ion-img>
+          </ion-col>
+          <ion-col col-6>
+            <ion-row>
+              <ion-label class="bangers" >{{ player.name }}   </ion-label> 
+            </ion-row>
+            <ion-row center full *ngIf="player.status == 1">
+              <ion-img width="100px"  src='../../assets/ui/small-blade-0.png'></ion-img>
+            </ion-row>
+            <ion-row center full *ngIf="player.status == 2">
+              <ion-img width="100px" src='../../assets/ui/small-blade-1.png'></ion-img>
+            </ion-row>
+            <ion-row center full *ngIf="player.status == 3">
+              <ion-img width="100px" src='../../assets/ui/small-blade-2.png'></ion-img>
+            </ion-row>
+            <ion-row center full *ngIf="player.status == 4">
+              <ion-img width="100px" src='../../assets/ui/small-blade-3.png'></ion-img>
+            </ion-row>
+            <ion-row center full *ngIf="player.status == 5">
+              <ion-img width="100px" src='../../assets/ui/small-blade-4.png'></ion-img>
+            </ion-row>
+            <ion-row center full *ngIf="player.status == 6">
+              <ion-img width="100px" src='../../assets/ui/small-blade-5.png'></ion-img>
+            </ion-row>
+          </ion-col>
+          <ion-col col-3>
+            <ion-img width="70px" height="180px" src="{{player.yesNoBtn}}" (click)="updateTrick(player)" *ngIf="player.trick !== undefined" ></ion-img>
+            <ion-img width="70px" height="180px" src="../../assets/buttons/yes no buttons/notyet-button@2x.png" *ngIf="player.trick === undefined"></ion-img>
+          </ion-col>       
+        </ion-row> 
+      </ion-row>
+      <ion-row class="padding-botton">           
+        <ion-col col-12>
+          <button ion-button danger full (click)="nextRound()" class="next-round" ></button>  
+        </ion-col>
+      </ion-row>        
+    </ion-grid>      
+</ion-content>

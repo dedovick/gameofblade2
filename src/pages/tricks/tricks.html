@@ -1,0 +1,29 @@
+<ion-content padding class="backgroundImage">  
+    <ion-grid>
+      <ion-row text-center *ngIf="count_tricks==0" class="contairner-trick-1">  
+        <ion-label class="instructions-below-label bangers">Set a trick (you can change it 2 times)</ion-label>
+      </ion-row>        
+      <ion-row text-center *ngIf="count_tricks==0" class="padding-20 contairner-trick-1">  
+        <ion-label class="tab-below-label-tricks bangers">Tap for trick</ion-label>       
+      </ion-row>  
+      <ion-row text-center *ngIf="count_tricks!=0"class="container-trick">  
+        <ion-label class="trick-tab-below-label bangers">{{trick}}</ion-label>       
+      </ion-row>  
+      <ion-row >
+          <button ion-button class="generate-tricks-button-1" *ngIf="count_tricks==0" (click)="changeTrick()"></button>   
+      </ion-row>   
+      <ion-row >
+          <button ion-button class="generate-tricks-button-2" *ngIf="count_tricks==1" (click)="changeTrick()"></button>   
+      </ion-row> 
+      <ion-row >
+          <button ion-button class="generate-tricks-button-3" *ngIf="count_tricks==2" (click)="changeTrick()"></button>   
+      </ion-row> 
+      <ion-row >
+          <button ion-button class="generate-tricks-button-4" *ngIf="count_tricks==3"  [disabled]="true" ></button>   
+      </ion-row> 
+            
+      <button *ngIf="count_tricks!=0" ion-button full class="set-trick" (click)="startTurn()"></button>
+
+    </ion-grid>
+  </ion-content>
+  

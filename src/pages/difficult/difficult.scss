@@ -1,0 +1,73 @@
+.backgroundImage{
+    background-image: url('../../assets/ui/pageBg.png');
+}
+
+.background-transparent{
+    opacity: 0.1;   
+    height: 100px;
+    color: rgba(255,255,255,0.5);
+}
+
+.font-tittle{
+    color: black;    
+    font-size: 25px;
+    padding-top: 20px;  
+}
+
+.font-subtittle{
+    color: black;
+    font-size: 18px;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+.next-dif{
+    position: fixed;
+    bottom: 10px;
+    right: 5px;
+    height: 50px;
+    border-radius: 8px;
+}
+
+.next-dif ion-img{
+    float: right !important;
+    display: block;
+}
+
+.back{
+    position: fixed;
+    left: 5px;
+    bottom: 10px;
+    height: 50px;
+    border-radius: 8px;
+    opacity:1;   
+}
+
+.back ion-img{
+    float: left !important;
+    display: block;
+}
+
+.selected{
+    opacity: 1;   
+}
+
+.set-difficult-label{
+    font-size: 32px;
+    color: white;
+}
+
+.padding-top-bottom-5{
+    padding-top:5px;
+    padding-bottom: 5px;
+}
+
+.padding-top-bottom-15{
+    padding-top:15px;
+    padding-bottom: 15px;
+}
+
+
+
+
+

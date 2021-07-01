@@ -1,0 +1,53 @@
+.logo-gameover{
+    height: 150px;
+}
+
+.trofeu-winner{
+    height: 200px;
+}
+
+.trofeu-winner img{
+    width: 60px;
+    height: 70px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.padding-40{
+    padding-top:140px;
+}
+
+
+.winner-label{
+    font-size: 40px;
+    font-family: Bangers;
+    color: white;
+    font-weight: bold;
+    white-space: normal !important;
+    word-wrap:  normal !important;
+}
+
+.backgroundImageGameOver{
+    background-image: url('../../assets/ui/pageBg-endOfGame.png');
+}
+
+.share-gameover{
+    background: url('../../assets/buttons/fullwidth-shareResults.png') no-repeat center center;
+    height: 50px;
+    border-radius: 12px;
+}
+
+.go-home{
+    background: url('../../assets/buttons/fullwidth-gotoHomescreen.png') no-repeat center center;
+    height: 50px;
+    border-radius: 12px;
+}
+
+.buttons{
+    position: absolute;
+    bottom: 10px;
+    width: 90%;
+}
+
